@@ -1,0 +1,34 @@
+#!/bin/bash
+# Nabyl Bennouri - 01/20/2018
+
+# parse arguments
+POSITIONAL=()
+while [[ $# -gt 0 ]]
+do
+key="$1"
+case $key in
+    -avd)
+    MODEL="$2"
+    shift # past argument
+    shift # past value
+    ;;
+    *)    # unknown option
+    POSITIONAL+=("$1") # save it in an array for later
+    shift # past argument
+    ;;
+esac
+done
+set -- "${POSITIONAL[@]}" # restore positional parameters
+
+# error handling
+if [[ -n $1 ]]; then
+    echo "Last line of file specified as non-opt/last argument:"
+    tail -1 "$1"
+fi
+
+if [ "${MODEL}" == "" ]
+then
+   MODEL="Pixel_2"
+fi
+
+${ANDROID_SDK_ROOT}/tools/emulator -avd ${MODEL}&
