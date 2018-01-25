@@ -1,6 +1,6 @@
-import React from 'react';
-import { Text, View, Image, Linking } from 'react-native';
-import { Card, Button, CardSection } from '../common';
+import React from "react";
+import { Text, View, Image, Linking } from "react-native";
+import { Card, Button, CardSection } from "../common";
 
 const AlbumDetail = ({ album }) => {
 
@@ -35,8 +35,8 @@ const AlbumDetail = ({ album }) => {
 
 const styles = {
     containerStyle: {
-      flexDirection: 'column',
-      justifyContent: 'space-around'
+      flexDirection: "column",
+      justifyContent: "space-around"
     },
     titleStyle: {
       fontSize: 18

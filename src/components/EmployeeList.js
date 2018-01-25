@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import { ListView } from 'react-native';
-import { connect } from 'react-redux';
-import _ from 'lodash';
-import ListItem from './ListItem';
-import { employeesFetch } from '../actions';
+import React, { Component } from "react";
+import { ListView } from "react-native";
+import { connect } from "react-redux";
+import _ from "lodash";
+import ListItem from "./ListItem";
+import { employeesFetch } from "../actions";
 
 class EmployeeList extends Component {
   componentWillMount() {
@@ -27,7 +27,7 @@ class EmployeeList extends Component {
   renderRow(employee) {
     return (
       <ListItem
-        employees={employee}
+        employee={employee}
       />
     );
   }

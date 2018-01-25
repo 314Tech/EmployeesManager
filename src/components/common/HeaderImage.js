@@ -1,5 +1,5 @@
-import React from 'react';
-import { View, Image } from 'react-native';
+import React from "react";
+import { View, Image } from "react-native";
 
 const HeaderImage = ({ source }) => {
   const { imageStyle } = styles;
@@ -19,7 +19,7 @@ const styles = {
     flex: 1,
     height: undefined,
     width: undefined,
-    resizeMode: 'contain'
+    resizeMode: "contain"
   }
 };
 

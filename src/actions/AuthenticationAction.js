@@ -1,10 +1,10 @@
-import firebase from 'firebase';
-import { Actions } from 'react-native-router-flux';
+import firebase from "firebase";
+import { Actions } from "react-native-router-flux";
 import { EMAIL_CHANGED,
   PASSWORD_CHANGED,
   LOGIN_USER_SUCCESS,
   LOGIN_USER_FAIL,
-  LOGIN_USER } from './types';
+  LOGIN_USER } from "./types";
 
 export const emailChanged = (text) => {
   return {
@@ -35,10 +35,10 @@ export const loginUser = ({ email, password }) => {
 
 const loginUserSuccess = (dispatch, user) => {
   dispatch(
-  {
-    type: LOGIN_USER_SUCCESS,
-    payload: user
-  });
+    {
+      type: LOGIN_USER_SUCCESS,
+      payload: user
+    });
 
   // Move to the main screen
   Actions.main();
@@ -46,8 +46,8 @@ const loginUserSuccess = (dispatch, user) => {
 
 const loginUserFail = (dispatch, error) => {
   dispatch(
-  {
-    type: LOGIN_USER_FAIL,
-    payload: error.message
-  });
+    {
+      type: LOGIN_USER_FAIL,
+      payload: error.message
+    });
 };

@@ -1,5 +1,5 @@
-import React from 'react';
-import { Picker, Text, View } from 'react-native';
+import React from "react";
+import { Picker, Text, View } from "react-native";
 
 const Chooser = (props) => {
   const { pickerTextStyle, pickerContainerStyle, pickerStyle } = styles;
@@ -30,14 +30,14 @@ const styles = {
   pickerTextStyle: {
     fontSize: 18,
     paddingLeft: 20,
-    color: '#E9222E'
+    color: "#E9222E"
   },
   pickerStyle: {
     flex: 1
   },
   pickerContainerStyle: {
     flex: 1,
-    flexDirection: 'column'
+    flexDirection: "column"
   }
 };
 

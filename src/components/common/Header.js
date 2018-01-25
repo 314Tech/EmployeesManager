@@ -1,6 +1,6 @@
 // Import libraries
-import React from 'react';
-import { Text, View } from 'react-native';
+import React from "react";
+import { Text, View } from "react-native";
 
 // Make a registerComponent
 const Header = (props) => {
@@ -16,9 +16,9 @@ const Header = (props) => {
 
 const styles = {
   viewStyle: {
-    backgroundColor: '#F8F8F8',
-    justifyContent: 'center',
-    alignItems: 'center',
+    backgroundColor: "#F8F8F8",
+    justifyContent: "center",
+    alignItems: "center",
     height: 60,
     paddingTop: 15
   },
